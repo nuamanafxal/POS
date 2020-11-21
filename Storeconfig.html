@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Store Config</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/WebV.css">
+<link rel="stylesheet" href="css/TabV.css">
+<style>
+.displayy{
+    width:220px;
+}
+
+.m{
+margin-left:220px;
+transition: 0.4s;
+}
+</style>
+</head>
+<body id="col">
+
+<div class="sidebar " style="transition: 0.5s" id="mySidebar">
+    <div class="header">
+        <img src="images/header_logo.png">
+    </div>
+ <ul class="sidemenu w3-animate-left">
+    <li><a class="" href="index.html"><i class="fa fa-dashboard"></i>  <span> Dashboard</span></a></li>
+    <li><a href="Customers.html" class=""><i class="fa fa-user"></i>  <span>Customers</span></a></li>
+    <li><a href="Items.html" class=""><i class="fa fa-archive"></i>  <span>Items</span></a></li>
+    <li><a href="ItemKits.html" class=""><i class="fa fa-briefcase"></i>  <span>Items Kits</span></a></li>
+    <li><a href="PriceRules.html" class=""><i class="fa fa-address-book"></i>  <span>Price Rules</span></a></li>
+    <li><a href="Suppliers.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Suppliers</span></a></li>
+    <li><a href="Reports.html" class=""><i class="fa fa-address-card"></i>  <span>Reports</span></a></li>
+    <li><a href="Receiving.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Receiving</span></a></li>
+   
+    <li><a href="Sales.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Sales</span></a></li>
+    <li><a href="Deliveries.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Deliveries</span></a></li>
+    <li><a href="Expenses.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Expenses</span></a></li>
+    <li><a href="Appointments.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Appointments</span></a></li>
+    <li><a href="Employess.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Employees</span></a></li>
+    <li><a href="GiftCards.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Gift Cards</span></a></li>
+    <li><a href="Storeconfig.html" class="active"><i class="fa fa-users fa-fw"></i>  <span>Store Config</span></a></li>
+    <li><a href="Locations.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Locations</span></a></li>
+    <li><a href="Messages.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Message</a></li>
+   
+    <li><a href="Logout.html" class=""><i class="fa fa-sign-out"></i>  <span>Logout</span></a></li></li>
+    
+ </ul>
+</div>
+
+<div class="content" id="con">
+    <ul class="menu">
+        <li><a href="#home">  <button class="openbtn" id="myBtn" onclick="opennav()"> &#9776;</button><span style="font-weight:bold!important" id="db">Dashboard</span></a></li>
+         <li><a href="#home">  <span style="font-weight:bold!important" id="db">/</span></a></li>
+         <li><a href="#home">  <span  id="db">Store Config</span></a></li>
+        
+        
+        <div class="right">
+        <li class="dropdown "><a href="javascript:void(0)" class="dropbtn">Dropdown  <i class="fa fa-caret-down"></i></a>
+            <div class="dropdown-content w3-animate-zoom">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div></li>
+            <li class="dropdown " id="dp"><a href="javascript:void(0)" class="dropbtn">English <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content w3-animate-zoom">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div></li>
+        <li id="i"><a class="" href="#about" style="font-size: 28px;font-weight:bold;margin-top:-8px;">i</a></li>
+        <li><a href=""><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-green">3</span></a></li>
+        <li><a href=""><img src="images/avatar-default.jpg" style="width:30px;height:30px;border-radius: 50%;margin-top:-4px;"></a></li>
+        <li id="name"><a href="">Nuaman Afxal</a></li>
+    
+    </ul>
+
+
+<div class="container">
+<div class="w3-row-padding">
+    <div class="w3-col l3 s12 m6">
+        <div class="w3-card-2 w3-light-gray  w3-display-container" >
+            
+            <div class="w3-left-align ">
+                <h3 class="fontsize">151</h3>
+                <h3>Total Sales</h3>
+            </div>
+            
+                <div class="display-right dbc">
+                    <i class="fa fa-lock"></i>
+                </div>
+            </div>
+    </div>
+   
+
+    <div class="w3-col l3 s12 m6">
+        <div class="w3-card-2 w3-light-gray  w3-display-container" >
+            
+            <div class="w3-left-align ">
+                <h3 class="fontsize">151</h3>
+                <h3>Total Sales</h3>
+            </div>
+            
+                <div class="display-right gc">
+                    <i class="fa fa-lock"></i>
+                </div>
+            </div>
+    </div>
+    <div class="w3-col l3 s12 m6">
+        <div class="w3-card-2 w3-light-gray  w3-display-container" >
+            
+            <div class="w3-left-align ">
+                <h3 class="fontsize">151</h3>
+                <h3>Total Sales</h3>
+            </div>
+            
+                <div class="display-right rc">
+                    <i class="fa fa-lock"></i>
+                </div>
+            </div>
+    </div>
+   
+    <div class="w3-col l3 s12 m6">
+        <div class="w3-card-2 w3-light-gray  w3-display-container" >
+            
+            <div class="w3-left-align ">
+                <h3 class="fontsize">151</h3>
+                <h3>Total Sales</h3>
+            </div>
+            
+                <div class="display-right orc">
+                    <i class="fa fa-lock"></i>
+                </div>
+            </div>
+    </div>
+   
+   </div>
+  </div>  
+
+ <div class="w3-container">
+    <p class="w3-center">Welcome to PHP Point Of Sale, choose a common task below to get started!</p>
+</div>
+
+<!--panel section-->
+<div class="container">
+    <div class="w3-row-padding">
+        <div class="w3-col l6 ">
+            <div class="w3-card-2 w3-light-gray  w3-display-container  w3-padding w3-border" >
+                <i class="fa fa-lock"></i> | <span  class="margin-left">Start a new Sale</span>
+            </div>
+        </div>
+       <div class="w3-col l6 ">
+            <div class="w3-card-2 w3-light-gray  w3-display-container  w3-padding w3-border" >
+                <i class="fa fa-lock"></i> | <span  class="margin-left">Start a new Sale</span>
+            </div>
+        </div>
+    </div>
+
+       
+    
+    <div class="w3-row-padding">
+        <div class="w3-col l6 ">
+            <div class="w3-card-2 w3-light-gray  w3-display-container  w3-padding w3-border" >
+                <i class="fa fa-lock"></i> | <span  class="margin-left">Start a new Sale</span>
+            </div>
+        </div>
+       <div class="w3-col l6 ">
+            <div class="w3-card-2 w3-light-gray  w3-display-container  w3-padding w3-border" >
+                <i class="fa fa-lock"></i> | <span  class="margin-left">Start a new Sale</span>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding">
+        <div class="w3-col l6 ">
+            <div class="w3-card-2 w3-light-gray  w3-display-container  w3-padding w3-border" >
+                <i class="fa fa-lock"></i> | <span class="margin-left">Start a new Sale</span>
+            </div>
+        </div>
+    </div>
+</div>  <!--container-->
+
+<!--tabs-->
+    <div class="container">
+        <div class="w3-padding">
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Month</button>
+          
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Week</button>
+          </div>
+          
+          <div id="London" class="tabcontent">
+            <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+            <h3>London</h3>
+            <p>London is the capital city of England.</p>
+          </div>
+          
+          <div id="Paris" class="tabcontent">
+            <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+            <h3>Paris</h3>
+            <p>Paris is the capital of France.</p> 
+          </div>
+          
+          <div id="Tokyo" class="tabcontent">
+            <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+            <h3>Tokyo</h3>
+            <p>Tokyo is the capital of Japan.</p>
+          </div>
+    </div>
+</div>
+
+<div class="w3-container">
+    <p style="text-align:center;">
+        Please visit our Website to learn the latest information about the project. 
+        You are using PHP Point Of Sale Version 17.7 Built on 11-09-2020 01:41 pm EST.
+    </p>
+</div><!--container-->
+    
+    
+</div><!--content-->
+<script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
+       <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
+
+<script>
+    
+
+
+function opennav() {
+  document.getElementById("mySidebar").classList.toggle("displayy");
+  
+  
+}
+
+
+     // Close the dropdown if the user clicks outside of it
+     window.onclick = function(event) {
+          if (!event.target.matches('.openbtn')) {
+            var dropdowns = document.getElementsByClassName("sidebar");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('displayy') ) {
+                openDropdown.classList.remove('displayy');
+              }
+            }
+          }
+        }
+
+    
+    </script>
+    <script>
+        
+        function myFunction(x) {
+          if (x.matches) { // If media query matches
+            document.getElementsByTagName("span").style.display="block";
+          } else {
+            document.getElementsByTagName("span").style.display="none";
+          }
+        }
+        
+        var x = window.matchMedia("(max-width: 700px)")
+        myFunction(x) // Call listener function at run time
+        x.addListener(myFunction) // Attach listener function on state changes
+        </script>
+        
+</body>
+</html>

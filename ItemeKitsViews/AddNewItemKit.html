@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AddNewItemKit</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="../js/script.js"></script>
+<link rel="stylesheet" href="../css/WebV.css">
+<link rel="stylesheet" href="../css/TabV.css">
+<link rel="stylesheet" href="../css/MobileV.css">
+
+
+<style>
+
+</style>
+</head>
+<body id="col">
+
+<div class="sidebar " style="transition: 0.5s" id="mySidebar">
+    <div class="header">
+        <img src="../images/header_logo.png">
+    </div>
+ <ul class="sidemenu w3-animate-left">
+    <li><a class="" href="../index.html"><i class="fa fa-dashboard"></i>  <span> Dashboard</span></a></li>
+    <li><a href="../Customers.html" class=""><i class="fa fa-user"></i>  <span>Customers</span></a></li>
+    <li><a href="../Items.html" class=""><i class="fa fa-archive"></i>  <span>Items</span></a></li>
+    <li><a href="../ItemKits.html" class="active"><i class="fa fa-briefcase"></i>  <span>Items Kits</span></a></li>
+    <li><a href="../PriceRules.html" class=""><i class="fa fa-address-book"></i>  <span>Price Rules</span></a></li>
+    <li><a href="../Suppliers.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Suppliers</span></a></li>
+    <li><a href="../Reports.html" class=""><i class="fa fa-address-card"></i>  <span>Reports</span></a></li>
+    <li><a href="../Recieving.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Receiving</span></a></li>
+   
+    <li><a href="../Sales.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Sales</span></a></li>
+    <li><a href="../Deliveries.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Deliveries</span></a></li>
+    <li><a href="../Expenses.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Expenses</span></a></li>
+    <li><a href="../Appointments.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Appointments</span></a></li>
+    <li><a href="../Employess.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Employees</span></a></li>
+    <li><a href="../GiftCards.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Gist Cards</span></a></li>
+    <li><a href="../Storeconfig.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Store Config</span></a></li>
+    <li><a href="../Locations.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Locations</span></a></li>
+    <li><a href="../Messages.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Message</a></li>
+      <li><a href="../TimeClock.html" class=""><i class="fa fa-clock-o"></i>  <span>TimeClock</a></li>
+ 
+    <li><a href="../Logout.html" class=""><i class="fa fa-sign-out"></i>  <span>Logout</span></a></li></li>
+    
+ </ul>
+</div>
+
+<div class="content" id="con">
+    <ul class="menu">
+        <li><a href="#home">  <button class="openbtn" id="myBtn" onclick="opennav()"> &#9776;</button><span style="font-weight:bold!important" id="db">Dashboard</span></a></li>
+         <li><a href="#home">  <span style="font-weight:bold!important" id="db">/</span></a></li>
+         <li><a href="#home">  <span  id="db">Item kits</span></a></li>
+         <li><a href="#home">  <span style="font-weight:bold!important" id="db">/</span></a></li>
+         <li><a href="#home">  <span  id="db">New item kit</span></a></li>
+        
+        
+        <div class="right">
+        <li class="dropdown "><a href="javascript:void(0)" class="dropbtn">Dropdown  <i class="fa fa-caret-down"></i></a>
+            <div class="dropdown-content w3-animate-zoom">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div></li>
+            <li class="dropdown " id="dp"><a href="javascript:void(0)" class="dropbtn">English <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content w3-animate-zoom">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div></li>
+        <li id="i"><a class="" href="#about" style="font-size: 28px;font-weight:bold;margin-top:-8px;">i</a></li>
+        <li><a href=""><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-green">3</span></a></li>
+        <li><a href=""><img src="../images/avatar-default.jpg" style="width:30px;height:30px;border-radius: 50%;margin-top:-4px;"></a></li>
+        <li id="name"><a href="">Nuaman Afxal</a></li>
+    
+        
+    </ul>
+
+
+
+
+
+<div class="container ">
+    <div class="w3-bar w3-padding-15 w3-theme-bg">
+        <div sclass="w3-left"><b> Customer Information</b> (Fields in red are required):</div>
+ </div>
+
+<div class="form-container">
+    <form action="/action_page.php">
+      <label for="fname" class="w3-text-red">First Name:</label>
+      <input type="text"  id="fname" name="FirstName" placeholder="Your name.." required>
+  
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" name="LastName" placeholder="Your last name..">
+  
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="PhoneNumberame" placeholder="Your E-mail..">
+
+      <label for="phone">Phone Number:</label>
+      <input type="text" id="phone" name="PhoneNumber" placeholder="Your Phone Number..">
+  
+      
+      <div class="chkbox">
+        <label for="image">Select Image:</label>
+        <input type='file'>
+        <br>
+    </div>
+
+    <div class="chkbox">
+      <img id="myimg" src="#" alt="your image" height="200" width="200">
+  </div><br>
+      <label for="address1">Address 1:</label>
+      <input type="text" id="address1" name="Address1" placeholder="Your Adress..">
+   
+      <label for="address2">Address 2:</label>
+      <input type="text" id="address2" name="Address2" placeholder="Your Adress..">
+   
+      <label for="cuty">City:</label>
+      <input type="text" id="city" name="City" placeholder="Your City Name..">
+
+      <label for="state">State/ Province</label>
+      <input type="text" id="state" name="State" placeholder="Your State/Province..">
+
+      <label for="zip">Zip:</label>
+      <input type="text" id="zip" name="Zip" placeholder="Your State/Province..">
+
+      <label for="country">Country:</label>
+      <input type="text" id="country" name="Country" placeholder="Your Country..">
+
+      <label for="comments">Comments:</label>
+      <textarea id="comments" name="Comments" placeholder="Write something.." style="height:100px"></textarea>
+     
+      <label for="notes">Internal Notes:</label>
+      <textarea id="notes" name="Notes"  style="height:100px"></textarea>
+
+      <label for="accNo" class="w3-text-green">Account Number:</label>
+      <input type="text" id="accountNo" name="AccountNo" style="border:2px solid rgb(103, 192, 103)">
+        <div class="chkbox">
+            <label for="txtSale">Override Default Tax For Sale:</label> 
+            <input type="checkbox" id="TaxSale">
+        </div>  
+
+      <label for="tierType" class="w3-text-green">Tier Type:</label> 
+        <select id="tiertype" name="TierType" style="border:2px solid rgb(103, 192, 103)">
+        <option value="australia">None</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+
+      <label for="tierType">Location:</label> 
+        <select id="location" name="Location">
+        <option value="australia">All</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+
+      <label for="notes">Message To Show When Adding Customer To Sale:</label>
+      <textarea id="notes" name="Notes"  style="height:100px"></textarea>
+
+
+      <div class="chkbox">
+        <label for="autoEmail">Auto Email Receipt:</label> 
+        <input type="checkbox" id="autoEmail">
+    </div> 
+
+    <div class="container w3-white">
+        <div class="w3-bar w3-padding-15 w3-theme-bg">
+            <div style="float:left;"> <i class="fa fa-file"></i> Files:</div>
+        </div>
+        <h3>Add Files:</h3>
+        <br>
+        <div class="chkbox">
+            <label for="file1">File 1:</label> 
+            <input type="file" id="autoEmail"><br>
+        </div>
+        <div class="chkbox">
+            <label for="file2">File 2:</label> 
+            <input type="file" id="autoEmail"><br>
+        </div>
+        <div class="chkbox">
+            <label for="file3">File 3:</label> 
+            <input type="file" id="autoEmail"><br>
+        </div>
+        <div class="chkbox">
+            <label for="file4">File 4:</label> 
+            <input type="file" id="autoEmail"><br>
+        </div>
+    </div> 
+    
+      <input type="submit" value="Submit" onclick="focusInput()">
+    </form>
+  </div>
+    
+</div>
+  
+       
+    
+    
+</div><!--content-->
+
+
+       
+
+      
+
+
+
+</body>
+</html>

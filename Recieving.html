@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>recieving</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/WebV.css">
+<link rel="stylesheet" href="css/TabV.css">
+<style>
+.displayy{
+    width:220px;
+}
+
+.m{
+margin-left:220px;
+transition: 0.4s;
+}
+</style>
+</head>
+<body id="col" class="w3-light-gray">
+
+<div class="sidebar " style="transition: 0.5s" id="mySidebar">
+    <div class="header">
+        <img src="images/header_logo.png">
+    </div>
+ <ul class="sidemenu w3-animate-left">
+    <li><a class="" href="index.html"><i class="fa fa-dashboard"></i>  <span> Dashboard</span></a></li>
+    <li><a href="Customers.html" class=""><i class="fa fa-user"></i>  <span>Customers</span></a></li>
+    <li><a href="Items.html" class=""><i class="fa fa-archive"></i>  <span>Items</span></a></li>
+    <li><a href="ItemKits.html" class=""><i class="fa fa-briefcase"></i>  <span>Items Kits</span></a></li>
+    <li><a href="PriceRules.html" class=""><i class="fa fa-address-book"></i>  <span>Price Rules</span></a></li>
+    <li><a href="Suppliers.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Suppliers</span></a></li>
+    <li><a href="Reports.html" class=""><i class="fa fa-address-card"></i>  <span>Reports</span></a></li>
+    <li><a href="Recieving.html" class="active"><i class="fa fa-users fa-fw"></i>  <span>Receiving</span></a></li>
+   
+    <li><a href="Sales.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Sales</span></a></li>
+    <li><a href="Deliveries.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Deliveries</span></a></li>
+    <li><a href="Expenses.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Expenses</span></a></li>
+    <li><a href="Appointments.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Appointments</span></a></li>
+    <li><a href="Employess.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Employees</span></a></li>
+    <li><a href="GiftCards.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Gist Cards</span></a></li>
+    <li><a href="Storeconfig.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Store Config</span></a></li>
+    <li><a href="Locations.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Locations</span></a></li>
+    <li><a href="Messages.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Message</a></li>
+      <li><a href="TimeClock.html" class=""><i class="fa fa-clock-o"></i>  <span>TimeClock</a></li>
+ 
+    <li><a href="Logout.html" class=""><i class="fa fa-sign-out"></i>  <span>Logout</span></a></li></li>
+    
+ </ul>
+</div>
+
+<div class="content" id="con">
+    <ul class="menu">
+        <li><a href="#home">  <button class="openbtn" id="myBtn" onclick="opennav()"> &#9776;</button><span style="font-weight:bold!important" id="db">Dashboard</span></a></li>
+         <li><a href="#home">  <span style="font-weight:bold!important" id="db">/</span></a></li>
+         <li><a href="#home">  <span  id="db">Receiving</span></a></li>
+        
+        
+        <div class="right">
+        <li class="dropdown "><a href="javascript:void(0)" class="dropbtn">Dropdown  <i class="fa fa-caret-down"></i></a>
+            <div class="dropdown-content w3-animate-zoom">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div></li>
+            <li class="dropdown " id="dp"><a href="javascript:void(0)" class="dropbtn">English <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content w3-animate-zoom">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div></li>
+        <li id="i"><a class="" href="#about" style="font-size: 28px;font-weight:bold;margin-top:-8px;">i</a></li>
+        <li><a href=""><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-green">3</span></a></li>
+        <li><a href=""><img src="images/avatar-default.jpg" style="width:30px;height:30px;border-radius: 50%;margin-top:-4px;"></a></li>
+        <li id="name"><a href="">Nuaman Afxal</a></li>
+    
+    </ul>
+
+
+    <div class="container">
+    
+      <div class="w3-bar-2 ">
+       <div class="btnn-group w3-center">
+         <button> Categories</button>
+         <button> Tags</button>
+         <button>Favourites</button>
+       </div>
+     
+    </div>
+    <div class="w3-row-padding" style="margin-top:50px;">
+      <div class="w3-col l3">Onne</div>
+      <div class="w3-col l3">Two</div>
+      <div class="w3-col l3">Three</div>
+    </div>
+</div><!--container-->
+
+<div class="container" style="margin-top:80px;">
+  <div class="w3-row-padding">
+    <div class="w3-col l8">
+      <div class="w3-white w3-border-radius" style="padding:15px;">
+        <div class="w3-bar-2 ">
+          <div class="btnn-group w3-center">
+            <button> New Item</button>
+            <button> Sale</button>
+            <button> Hide Grid</button>
+          </div>
+        </div>
+      <div class="input-container">
+        <i class="fa fa-search icon"></i>
+        <input class="input-field" type="text" placeholder="Username" name="usrnm">
+      </div> 
+    </div><br>
+    <div class="w3-row">
+      <div class="w3-col l12">
+          <div class=" w3-white w3-border-radius" style="padding:15px;">
+          
+            <div style="overflow-x:auto;">
+              <table>
+                <tr>
+                  <th>  No</th>
+                  <th>Item-Name</th>
+                  <th>Price</th>
+                  <th>Qty</th>
+                  <th>Disc %</th>
+                  <th>Total</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>2</td>
+                  </div>
+                  <td>50</td>
+                  <td>Nuaman</td>
+                  <td>Nuaman36@gmail.com</td>
+                  <td>0558128591</td>
+                  </tr>
+               </table>
+            </div>
+          </div>
+        </div><!--2nd-row-->
+      </div>
+    </div><!--rwo-padddding-->
+    <div class="w3-col l4">
+      <div class="w3-white w3-border-radius" style="padding:15px;">
+        <div class="w3-white w3-border-radius" style="padding:15px;">
+          <div class="w3-bar-2 ">
+            <div class="btnn-group w3-center">
+              
+              <button><i class="fa fa-edit"></i> </button>
+            </div><br>
+            <hr>
+          </div>
+        <div class="input-container">
+          <i class="fa fa-search icon"></i>
+          <input class="input-field" type="text" placeholder="Type Customer Name" name="usrnm">
+        </div> 
+      </div>  
+    </div>
+<br>
+    <div class="w3-white w3-border-radius" style="padding:15px;">
+      <div class="w3-white w3-border-radius" style="padding:15px;">
+       
+        <div class="w3-row">
+          <div class="w3-col l6 w3-border">
+            <h3 class="w3-left">Sub Total:</h3><br><br>
+            <h3 class="w3-center w3-text-blue">$ 0.00</h2>
+          </div>
+          <div class="w3-col l6 w3-border">
+            <h3 class="w3-left">Amount Due:</h3><br><br>
+            <h3 class="w3-center w3-text-blue">$ 0.00</h2>
+          </div>
+         </div> 
+            
+            
+            
+        </div>
+      
+        
+    </div>  
+  </div><!--col-l4-->
+
+
+
+  
+</div><!--container-->
+    
+</div><!--content-->
+<script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
+       <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
+
+<script>
+    
+
+
+function opennav() {
+  document.getElementById("mySidebar").classList.toggle("displayy");
+  
+  
+}
+
+
+     // Close the dropdown if the user clicks outside of it
+     window.onclick = function(event) {
+          if (!event.target.matches('.openbtn')) {
+            var dropdowns = document.getElementsByClassName("sidebar");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('displayy') ) {
+                openDropdown.classList.remove('displayy');
+              }
+            }
+          }
+        }
+
+    
+    </script>
+    <script>
+        
+        function myFunction(x) {
+          if (x.matches) { // If media query matches
+            document.getElementsByTagName("span").style.display="block";
+          } else {
+            document.getElementsByTagName("span").style.display="none";
+          }
+        }
+        
+        var x = window.matchMedia("(max-width: 700px)")
+        myFunction(x) // Call listener function at run time
+        x.addListener(myFunction) // Attach listener function on state changes
+        </script>
+        
+</body>
+</html>

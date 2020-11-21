@@ -1,0 +1,166 @@
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    outline:none;
+    color: white;
+    margin-top:-6px;
+    border: none;
+    background-color: dodgerblue;
+    font-weight: bold!important;
+  }
+
+.openbtn{
+    display:none;
+}
+
+@media (max-width:1036px){
+    
+    
+    h2,h3{
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-left: 8px;
+       
+
+    }}
+
+@media (max-width:1024px){
+    .sidebar .sidemenu li span{
+      display:block;
+      
+    }
+
+    .displayy{
+      width:125px!important;
+    }
+
+    .menu  li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 17px 9px 8px 9px;
+        text-decoration: none;
+        font-size:13px;
+      }
+      
+    
+    h2,h3{
+        padding-top: 7px;
+        padding-bottom: 7px;
+        padding-left: 8px;
+    }
+    .sidebar {
+      margin: 0;
+      padding: 0;
+      width: 125px;
+      background-color: #3f3737;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+      
+    }
+    div.content {
+      margin-left: 125px;
+      transition: 0.5s
+     
+    }
+  
+    .sidebar .sidemenu li a{
+      text-align: center;
+      font-size:15px!important;
+      
+    }
+    .right{
+        margin-right:0px !important;
+    }
+    #i{
+        display:none;
+    }
+
+    #name{
+        display:none;
+    }
+  }
+
+  
+  @media screen and (max-width: 800px) {
+    .openbtn{
+        display:block;
+    }
+    .sidebar .sidemenu li span{
+      display:block;
+      
+    }
+    #db{
+        display:none;
+    }
+    div.content {
+        margin-left: 0px;
+        transition: 0.5s
+       
+      }
+    
+    .sidebar{width:0;}
+
+    #i{
+        display:none;
+    }
+
+    #name{
+        display:none;
+    }
+  }
+
+
+
+
+
+
+
+
+
+@media (max-width:600px){
+  h2,h3{
+    
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 8px;
+   font-size:14px;
+  }
+  .sidebar .sidemenu li span{
+    display:block;
+    
+  }
+  .form-container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 30px;
+  }
+
+  .menu  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 17px 9px 8px 9px;
+    text-decoration: none;
+    font-size:12px;
+  }
+
+  
+
+  .sidebar .sidemenu li a{
+    text-align: center;
+    font-size:16px!important;
+    
+  }
+  
+}
+
+  .w3-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.w3-animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+.w3-animate-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.w3-animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.w3-animate-right{animation:animateright 0.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.w3-animate-bottom{animation:animatebottom 0.4s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.w3-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+.w3-animate-input{transition:width 0.4s ease-in-out}.w3-animate-input:focus{width:100%!important}

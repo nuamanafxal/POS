@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CustomFieldConfig</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="../js/script.js"></script>
+<link rel="stylesheet" href="../css/WebV.css">
+<link rel="stylesheet" href="../css/TabV.css">
+<link rel="stylesheet" href="../css/MobileV.css">
+<style>
+
+</style>
+</head>
+<body id="col">
+
+<div class="sidebar " style="transition: 0.5s" id="mySidebar">
+    <div class="header">
+        <img src="../images/header_logo.png">
+    </div>
+ <ul class="sidemenu w3-animate-left">
+    <li><a class="" href="../index.html"><i class="fa fa-dashboard"></i>  <span> Dashboard</span></a></li>
+    <li><a href="../Customers.html" class=""><i class="fa fa-user"></i>  <span>Customers</span></a></li>
+    <li><a href="../Items.html" class=""><i class="fa fa-archive"></i>  <span>Items</span></a></li>
+    <li><a href="../ItemKits.html" class=""><i class="fa fa-briefcase"></i>  <span>Items Kits</span></a></li>
+    <li><a href="../PriceRules.html" class=""><i class="fa fa-address-book"></i>  <span>Price Rules</span></a></li>
+    <li><a href="../Suppliers.html" class="active"><i class="fa fa-users fa-fw"></i>  <span>Suppliers</span></a></li>
+    <li><a href="../Reports.html" class=""><i class="fa fa-address-card"></i>  <span>Reports</span></a></li>
+    <li><a href="../Recieving.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Receiving</span></a></li>
+   
+    <li><a href="../Sales.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Sales</span></a></li>
+    <li><a href="../Deliveries.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Deliveries</span></a></li>
+    <li><a href="../Expenses.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Expenses</span></a></li>
+    <li><a href="../Appointments.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Appointments</span></a></li>
+    <li><a href="../Employess.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Employees</span></a></li>
+    <li><a href="../GiftCards.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Gist Cards</span></a></li>
+    <li><a href="../Storeconfig.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Store Config</span></a></li>
+    <li><a href="../Locations.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Locations</span></a></li>
+    <li><a href="../Messages.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Message</a></li>
+      <li><a href="../TimeClock.html" class=""><i class="fa fa-clock-o"></i>  <span>TimeClock</a></li>
+ 
+    <li><a href="../Logout.html" class=""><i class="fa fa-sign-out"></i>  <span>Logout</span></a></li></li>
+    
+ </ul>
+</div>
+
+<div class="content" id="con">
+    <ul class="menu">
+        <li><a href="#home">  <button class="openbtn" id="myBtn" onclick="opennav()"> &#9776;</button><span style="font-weight:bold!important" id="db">Dashboard</span></a></li>
+         <li><a href="#home">  <span style="font-weight:bold!important" id="db">/</span></a></li>
+         <li><a href="#home">  <span  id="db">Suppliers</span></a></li>
+         <li><a href="#home">  <span style="font-weight:bold!important" id="db">/</span></a></li>
+         <li><a href="#home">  <span  id="db">Custom Field Configuration</span></a></li>
+        
+        
+        <div class="right">
+        <li class="dropdown "><a href="javascript:void(0)" class="dropbtn">Dropdown  <i class="fa fa-caret-down"></i></a>
+            <div class="dropdown-content w3-animate-zoom">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div></li>
+            <li class="dropdown " id="dp"><a href="javascript:void(0)" class="dropbtn">English <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content w3-animate-zoom">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div></li>
+        <li id="i"><a class="" href="#about" style="font-size: 28px;font-weight:bold;margin-top:-8px;">i</a></li>
+        <li><a href=""><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-green">3</span></a></li>
+        <li><a href=""><img src="../images/avatar-default.jpg" style="width:30px;height:30px;border-radius: 50%;margin-top:-4px;"></a></li>
+        <li id="name"><a href="">Nuaman Afxal</a></li>
+    
+    </ul>
+
+
+
+
+
+<div class="container ">
+    <div class="w3-bar w3-padding-15 w3-theme-bg">
+        <div class="w3-left"><b> Custom Field Configuration:</div>
+        
+    </div>
+
+<div class="form-container">
+    <div class="w3-bar w3-padding-15 w3-theme-bg" style="margin:0;">
+        <div class="w3-left"><h3> Custom Field 1</h3></div>
+        
+    </div>
+    <br>
+    <form action="/action_page.php">
+      <label for="fname" class="w3-text-red">Name:</label>
+      <input type="text"  id="name" name="Name" placeholder="name.." required>
+  
+      <label for="Type">Type:</label> 
+        <select id="type" name="Type">
+        <option value="australia">All</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+
+      <div class="chkbox">
+        <label for="shoeReciept">Show On Receipt:</label> 
+        <input type="checkbox" id="autoEmail">
+    </div> 
+<br>
+    <div class="chkbox">
+        <label for="hideField">Hide Field Label:</label> 
+        <input type="checkbox" id="autoEmail">
+    </div> 
+
+    <br>
+    <div class="chkbox">
+        <label for="hideField">Required:</label> 
+        <input type="checkbox" id="autoEmail">
+    </div> 
+    </form>
+  </div>
+  <br>
+  
+  <div class="form-container">
+    <div class="w3-bar w3-padding-15 w3-theme-bg" style="margin:0;">
+        <div class="w3-left"><h3> Custom Field 2</h3></div>
+        
+    </div>
+    <br>
+    <form action="/action_page.php">
+      <label for="fname" class="w3-text-red">Name:</label>
+      <input type="text"  id="name" name="Name" placeholder="name.." required>
+  
+      <label for="Type">Type:</label> 
+        <select id="type" name="Type">
+        <option value="australia">All</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+
+      <div class="chkbox">
+        <label for="shoeReciept">Show On Receipt:</label> 
+        <input type="checkbox" id="autoEmail">
+    </div> 
+<br>
+    <div class="chkbox">
+        <label for="hideField">Hide Field Label:</label> 
+        <input type="checkbox" id="autoEmail">
+    </div> 
+
+    <br>
+    <div class="chkbox">
+        <label for="hideField">Required:</label> 
+        <input type="checkbox" id="autoEmail">
+    </div> 
+    </form>
+  </div>
+</div><!--contaner-->
+  
+       
+    
+    
+</div><!--content-->
+
+
+        
+
+
+
+</body>
+</html>

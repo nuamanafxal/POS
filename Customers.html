@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>customers</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="js/script.js"></script>
+<script src="js/json.js"></script>
+<link rel="stylesheet" href="css/WebV.css">
+<link rel="stylesheet" href="css/TabV.css">
+<link rel="stylesheet" href="css/MobileV.css">
+<style>
+
+</style>
+</head>
+<body id="col">
+
+<div class="sidebar " style="transition: 0.5s" id="mySidebar">
+    <div class="header">
+        <img src="images/header_logo.png">
+    </div>
+ <ul class="sidemenu w3-animate-left">
+    <li><a class="" href="index.html"><i class="fa fa-dashboard"></i>  <span> Dashboard</span></a></li>
+    <li><a href="Customers.html" class="active"><i class="fa fa-user"></i>  <span>Customers</span></a></li>
+    <li><a href="Items.html" class=""><i class="fa fa-archive"></i>  <span>Items</span></a></li>
+    <li><a href="ItemKits.html" class=""><i class="fa fa-briefcase"></i>  <span>Items Kits</span></a></li>
+    <li><a href="PriceRules.html" class=""><i class="fa fa-address-book"></i>  <span>Price Rules</span></a></li>
+    <li><a href="Suppliers.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Suppliers</span></a></li>
+    <li><a href="Reports.html" class=""><i class="fa fa-address-card"></i>  <span>Reports</span></a></li>
+    <li><a href="Recieving.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Receiving</span></a></li>
+   
+    <li><a href="Sales.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Sales</span></a></li>
+    <li><a href="Deliveries.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Deliveries</span></a></li>
+    <li><a href="Expenses.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Expenses</span></a></li>
+    <li><a href="Appointments.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Appointments</span></a></li>
+    <li><a href="Employess.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Employees</span></a></li>
+    <li><a href="GiftCards.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Gift Cards</span></a></li>
+    <li><a href="Storeconfig.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Store Config</span></a></li>
+    <li><a href="Locations.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Locations</span></a></li>
+    <li><a href="Messages.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Message</a></li>
+      <li><a href="TimeClock.html" class=""><i class="fa fa-clock-o"></i>  <span>TimeClock</a></li>
+ 
+    <li><a href="Logout.html" class=""><i class="fa fa-sign-out"></i>  <span>Logout</span></a></li></li>
+    
+ </ul>
+</div>
+
+<div class="content" id="con">
+    <ul class="menu">
+        <li><a href="#home">  <button class="openbtn" id="myBtn" onclick="opennav()"> &#9776;</button><span style="font-weight:bold!important" id="db">Dashboard</span></a></li>
+         <li><a href="#home">  <span style="font-weight:bold!important" id="db">/</span></a></li>
+         <li><a href="#home">  <span  id="db">Customers</span></a></li>
+        
+        
+        <div class="right">
+        <li class="dropdown "><a href="javascript:void(0)" class="dropbtn">Dropdown  <i class="fa fa-caret-down"></i></a>
+            <div class="dropdown-content w3-animate-zoom">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div></li>
+            <li class="dropdown " id="dp"><a href="javascript:void(0)" class="dropbtn">English <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content w3-animate-zoom">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div></li>
+        <li id="i"><a class="" href="#about" style="font-size: 28px;font-weight:bold;margin-top:-8px;">i</a></li>
+        <li><a href=""><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-green">3</span></a></li>
+        <li><a href=""><img src="images/avatar-default.jpg" style="width:30px;height:30px;border-radius: 50%;margin-top:-4px;"></a></li>
+        <li id="name"><a href="">Nuaman Afxal</a></li>
+    
+    </ul>
+
+<div class="topnav w3-padding-15">
+
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      
+    </form>
+    
+  </div>
+  
+  <a href="#search"> <select class="custom-select">
+    
+    <option value="0">Select Location:</option>
+    <option value="1">Audi</option>
+    <option value="2">BMW</option>
+    <option value="3">Citroen</option>
+  </select></a>
+  <a href="#" class="w3-blue" style="border-radius: 3px;margin-top:9px;"><i class="fa fa-search"></i> Search</a>
+  
+  <div class="topnav-right">
+    
+    <a href="CustomerViews/AddNewCustomer.html" class="w3-blue" style="border-radius: 3px;margin-top:9px;margin-right:1px;"><i class="fa fa-plus"></i> New Customer</a>
+    
+    <div class="select-dropdown w3-left" onclick="myDropdown()">
+      <a href="#" class="w3-blue" style="border-radius: 3px;margin-top:9px;margin-left:1px;" ><i class="fa fa-edit"></i> </a>
+    
+      <div id="select-myDropdown" class="dropdown-content w3-animate-zoom">
+       <span id="editOption"></span>
+    </div>
+  
+  </div>
+</div>
+ 
+
+
+<div class="container ">
+  <div class="w3-bar w3-padding-15 w3-theme-bg">
+  <div style="float:left;">Customers <span class="w3-badge w3-right w3-small w3-blue w3-margin-left"> 3</span></div>
+  <div class="btn-group w3-right">
+    <div class="GearDropdown">
+      <a class="w3-blue dropbtn"  onclick="myGearFunction()" style="border:none;cursor: pointer;"><i class="fa fa-gear"></i></a>
+      <div id="myGearDropdown" class="Gear-dropdown-content">
+        <div class="list w3-light-gray"> Column Configuration <span class="w3-right"><i class="fa fa-refresh"> </i></span></div>
+
+        <div class="list"> <input type="checkbox"> &nbsp; First Name<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+        <div class="list"> <input type="checkbox"> &nbsp; Last Name<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+        <div class="list"> <input type="checkbox"> &nbsp; E-mail<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+        <div class="list"> <input type="checkbox"> &nbsp; Phone Number<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+        <div class="list"> <input type="checkbox"> &nbsp; Balance<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+        <div class="list"> <input type="checkbox"> &nbsp; Person id<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+        <div class="list"> <input type="checkbox"> &nbsp; Comments<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+        <div class="list"> <input type="checkbox"> &nbsp; Name<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+        <div class="list"> <input type="checkbox"> &nbsp; Company Name<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+        <div class="list"> <input type="checkbox"> &nbsp; Account#<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+        <div class="list"> <input type="checkbox"> &nbsp; Credit Limit<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+        <div class="list"> <input type="checkbox"> &nbsp; Disable Loyalty<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+        <div class="list"> <input type="checkbox"> &nbsp; Points<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+        <div class="list"> <input type="checkbox"> &nbsp; Amount to spend for nxt month<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+        <div class="list"> <input type="checkbox"> &nbsp; Sales Until Discount<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+        <div class="list"> <input type="checkbox"> &nbsp; Address1<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+        <div class="list"> <input type="checkbox"> &nbsp; Address2<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+        <div class="list"> <input type="checkbox"> &nbsp; city<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+        <div class="list"> <input type="checkbox"> &nbsp; State/province<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+        <div class="list"> <input type="checkbox"> &nbsp; Zip<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+        <div class="list"> <input type="checkbox"> &nbsp; Country<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+        <div class="list"> <input type="checkbox"> &nbsp; Override DefaultTax For Sale<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+        <div class="list"> <input type="checkbox"> &nbsp; Taxable<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+        <div class="list"> <input type="checkbox"> &nbsp; Tier Name<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+        <div class="list"> <input type="checkbox"> &nbsp; Internal Notes<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+        <div class="list"> <input type="checkbox"> &nbsp; Auto Email Reciept<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+      </div>
+    </div>
+   </div>
+</div>
+<span id="customerData">
+
+</span>
+<div style="overflow-x:auto;">
+  <span id="customerData">
+
+  </span>
+</div>  
+</div>
+
+       
+    
+    
+</div><!--content-->
+
+
+  
+</body>
+</html>

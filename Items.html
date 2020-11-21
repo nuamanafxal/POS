@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Items</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="js/script.js"></script>
+<script src="js/json.js"></script>
+<link rel="stylesheet" href="css/WebV.css">
+<link rel="stylesheet" href="css/TabV.css">
+<link rel="stylesheet" href="css/MobileV.css">
+<style>
+
+</style>
+</head>
+<body id="col">
+
+<div class="sidebar " style="transition: 0.5s" id="mySidebar">
+    <div class="header">
+        <img src="images/header_logo.png">
+    </div>
+ <ul class="sidemenu w3-animate-left">
+    <li><a class="" href="index.html"><i class="fa fa-dashboard"></i>  <span> Dashboard</span></a></li>
+    <li><a href="Customers.html" class=""><i class="fa fa-user"></i>  <span>Customers</span></a></li>
+    <li><a href="Items.html" class="active"><i class="fa fa-archive"></i>  <span>Items</span></a></li>
+    <li><a href="ItemKits.html" class=""><i class="fa fa-briefcase"></i>  <span>Items Kits</span></a></li>
+    <li><a href="PriceRules.html" class=""><i class="fa fa-address-book"></i>  <span>Price Rules</span></a></li>
+    <li><a href="Suppliers.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Suppliers</span></a></li>
+    <li><a href="Reports.html" class=""><i class="fa fa-address-card"></i>  <span>Reports</span></a></li>
+    <li><a href="Recieving.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Receiving</span></a></li>
+   
+    <li><a href="Sales.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Sales</span></a></li>
+    <li><a href="Deliveries.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Deliveries</span></a></li>
+    <li><a href="Expenses.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Expenses</span></a></li>
+    <li><a href="Appointments.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Appointments</span></a></li>
+    <li><a href="Employess.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Employees</span></a></li>
+    <li><a href="GiftCards.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Gift Cards</span></a></li>
+    
+    <li><a href="Storeconfig.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Store Config</span></a></li>
+    <li><a href="Locations.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Locations</span></a></li>
+    <li><a href="Messages.html" class=""><i class="fa fa-users fa-fw"></i>  <span>Message</a></li>
+      <li><a href="TimeClock.html" class=""><i class="fa fa-clock-o"></i>  <span>TimeClock</a></li>
+ 
+    <li><a href="Logout.html" class=""><i class="fa fa-sign-out"></i>  <span>Logout</span></a></li></li>
+    
+ </ul>
+</div>
+
+<div class="content" id="con">
+  <ul class="menu">
+      <li><a href="#home">  <button class="openbtn" id="myBtn" onclick="opennav()"> &#9776;</button><span style="font-weight:bold!important" id="db">Dashboard</span></a></li>
+       <li><a href="#home">  <span style="font-weight:bold!important" id="db">/</span></a></li>
+       <li><a href="#home">  <span  id="db">Items</span></a></li>
+      
+      
+      <div class="right">
+      <li class="dropdown "><a href="javascript:void(0)" class="dropbtn">Dropdown  <i class="fa fa-caret-down"></i></a>
+          <div class="dropdown-content w3-animate-zoom">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div></li>
+          <li class="dropdown " id="dp"><a href="javascript:void(0)" class="dropbtn">English <i class="fa fa-caret-down"></i></a>
+              <div class="dropdown-content w3-animate-zoom">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div></li>
+      <li id="i"><a class="" href="#about" style="font-size: 28px;font-weight:bold;margin-top:-8px;">i</a></li>
+      <li><a href=""><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-green">3</span></a></li>
+      <li><a href=""><img src="images/avatar-default.jpg" style="width:30px;height:30px;border-radius: 50%;margin-top:-4px;"></a></li>
+      <li id="name"><a href="">Nuaman Afxal</a></li>
+  
+  </ul>
+
+<div class="topnav w3-padding-15">
+
+<div class="search-container">
+  <form action="/action_page.php">
+    <input type="text" placeholder="Search.." name="search">
+    
+  </form>
+  
+</div>
+
+<a href="#search"> <select class="custom-select">
+  
+  <option value="0">Select Location:</option>
+  <option value="1">Audi</option>
+  <option value="2">BMW</option>
+  <option value="3">Citroen</option>
+</select></a>
+<a href="#search"> <select class="custom-select">
+  
+  <option value="0">Select Category:</option>
+  <option value="1">Audi</option>
+  <option value="2">BMW</option>
+  <option value="3">Citroen</option>
+</select></a>
+<a href="#" class="w3-blue" style="border-radius: 3px;margin-top:9px;"><i class="fa fa-search"></i> Search</a>
+
+<div class="topnav-right">
+  
+  <a href="ItemsViews/CreateNewItem.html" class="w3-blue" style="border-radius: 3px;margin-top:9px;margin-right:1px;"><i class="fa plus"></i> New Items</a>
+    
+    <a href="#" class="w3-blue" style="border-radius: 3px;margin-top:9px;margin-left:1px;" ><i class="fa fa-edit"></i> </a>
+  
+   
+</div>
+</div>
+
+
+
+
+<div class="container ">
+  <div class="w3-bar w3-padding-15 w3-theme-bg">
+    <div style="float:left;">Items <span class="w3-badge w3-right w3-small w3-blue w3-margin-left"> 3</span></div>
+    <div class="btn-group w3-right">
+      <div class="GearDropdown">
+        <a class="w3-blue dropbtn"  onclick="myGearFunction()" style="border:none;cursor: pointer;"><i class="fa fa-gear"></i></a>
+        <div id="myGearDropdown" class="Gear-dropdown-content">
+          <div class="list w3-light-gray"> Column Configuration <span class="w3-right"><i class="fa fa-refresh"> </i></span></div>
+  
+          <div class="list"> <input type="checkbox"> &nbsp; Category Full Path<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Cost Price<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Selling Price<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Quantity<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Name<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Person id<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Item id<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; UPC/EAN/ISBN<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Product Id<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Barcode Name<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Category<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Supplier<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Location Cost Price<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Location Selling Price<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Tax Group<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Tags<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Description<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Long Description<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Information Popup when adding to sale<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Prices Include Tax<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Promo Price<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Promo Start Date<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Promo End Date<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Reorder Level<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Days to expiration<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Allow alt description<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Item has Serial number<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Override Default Tax<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Is Ecommerce Item<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Ecommerce Product id<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Ecommerce Product-id<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Is service<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Is EBT item<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Commision amount<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Commision Percent<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Commision Percent Type<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Commision Fixed vale<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Commision amount<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Change Cost Price during sale<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Replenish Level<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Minimum Manual Edit Price<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Maximum Manual Edit Price<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Has Varitions<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; #of Variations<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Last Modified<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Last Edited<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Allow price override regardless of percentage<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Only allow items to be sold in whole<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Sold in a series<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Series Quantity<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Number of Days series must be used<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Is Barcode<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Inactive<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Location at store<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; is favourite<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+          <div class="list"> <input type="checkbox"> &nbsp; Loyalty Multiplier<span class="w3-right"><i class="fa fa-align-justify"> </i></span></div>
+         
+        </div>
+      </div>
+     </div>
+  </div>
+
+
+<div style="overflow-x:auto;">
+  <span id="customerData">
+
+  </span>
+</div>  
+</div><!--container-->
+
+
+  
+  
+</div><!--content-->
+
+        
+</body>
+</html>
